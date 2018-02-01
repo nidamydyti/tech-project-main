@@ -1,0 +1,84 @@
+<div class="row-fluid">
+
+    <form class="form-horizontal span12">
+
+        <fieldset>
+
+            <legend>Detajet e dokumen</legend>
+            <br/>
+
+            <div class="row">
+                <div class="span8">
+
+                    <div class="control-group">
+                        <label for="docId" class="control-label">Id:</label>
+
+                        <div class="controls">
+                            <input id="docId" name="id" type="text" value="<%= _id === null ? '' : _id %>"
+                                   disabled/>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="name" class="control-label">Titulli:</label>
+
+                        <div class="controls">
+                            <input type="text" id="name" name="name" value="<%= name %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="autoret" class="control-label">Autoret:</label>
+
+                        <div class="controls">
+                            <input type="text" id="autoret" name="autoret" value="<%= autoret %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                
+
+                    <div class="control-group">
+                        <label for="region" class="control-label">Lokacioni:</label>
+
+                        <div class="controls">
+                            <input type="text" id="region" name="region" value="<%= region %>"/>
+                        </div>
+                    </div>
+
+             
+
+                    <div class="control-group">
+                        <label for="description" class="control-label">Pershkrim:</label>
+
+                        <div class="controls">
+                            <textarea id="description" name="description" style="width: 90%;" rows="6"><%= description
+                                %></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+        </fieldset>
+
+        <div class="form-actions">
+            <a href="#" class="btn btn-primary save">Ruaj</a>
+            <a href="#" class="btn delete">Fshij</a>
+        </div>
+
+    </form>
+
+</div>
+
+<div class="row-fluid status-bar">
+    <div class="span12">
+        <div class="alert alert-success" style="display: none">
+            <b>Sukses!</b> Dokumenti u ruajt me sukses
+        </div>
+    </div>
+</div>
